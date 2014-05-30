@@ -1,14 +1,25 @@
-.slider {
-  margin: 10px 0;
-  width: 580px; /* Update to your slider width */
-  height: 250px; /* Update to your slider height */
-  position: relative;
-  overflow: hidden;
+.profile-image {
+  float: left;
+
 }
 
-.slider li {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+#profile-image {
+   margin: 45px 40px 30px 45px;
+}
+
+
+#name {
+  font-size: 30px;
+}
+
+ul {
+    padding: 10px;
+    background: black;
+    text-align: center;
+  }
+
+li {
+  color: white;
+  display: inline;
+  padding: 0px 10px 0px 10px;
 }
