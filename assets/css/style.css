@@ -4,12 +4,14 @@
 }
 
 #profile-image {
-   margin: 45px 40px 30px 45px;
+   margin: -20px 40px 30px 45px;
 }
 
 
 #name {
   font-size: 30px;
+  position: relative;
+
 }
 
 ul {
