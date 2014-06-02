@@ -34,7 +34,7 @@
           <li id="tweetsmithy">   TweetSmithy   </li>
         </ul>
         <div id="content">
-            <a href="assets/web/viewer.html?file=web-resume.pdf">Open yourpdf.pdf with PDF.js</a>
+
         </div>
       </div> <!-- nine columns omega -->
     </div> <!-- sixteen columns -->
@@ -50,15 +50,11 @@
           }
         );
 
-
-        // $( "#about.fade" ).hover(function() {
-        //   $( this ).fadeOut( 100 );
-        //   $( "#about" ).fadeIn( 1000 );
-        // });
   </script>
   <script rel="text/javascript">
         $("#resume").hover(function() {
-            $("#content").append( $( "<span><a href='assets/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf'>Open yourpdf.pdf with PDF.js</a> </span>" ) );
+            $("#content").append( $( "<span><a href='assets/web/viewer.html?file=web-resume.pdf'>Open yourpdf.pdf with PDF.js</a> </span>" ) );
+            $("#content").append($("<iframe width='100%' height='700px;' src='assets/web/viewer.html'></iframe>") );
           }
         );
 
