@@ -7,38 +7,68 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="text/javascript" href="assets/scripts/nav_hover.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
 
   <body>
 
   <div class="container">
-
-
-      <div class="one-third column">
-
-          <h1>
-             Colin Hart
-          </h1>
-
+    <div class="one-third column">
+      <h1>
+        Colin Hart
+      </h1>
     </div>
 
-
-  <div class="sixteen columns">
-    <div class="seven columns alpha">
-      <div class="profile-image">
-        <img id="profile-image" src="assets/images/profile-img.drw.jpg" alt="">
+    <div class="sixteen columns">
+      <div class="seven columns alpha">
+        <div class="profile-image">
+          <img id="profile-image" src="assets/images/profile-img.drw.jpg" alt="profile image">
+        </div>
       </div>
+      <div class="nine columns omega">
+        <ul>
+          <li id="about">   About   </li>
+          <li id="resume">   Resume   </li>
+          <li id="seedly">   Seedly   </li>
+          <li id="tweetsmithy">   TweetSmithy   </li>
+        </ul>
+        <div id="content">
+
+        </div>
+      </div> <!-- nine columns omega -->
+    </div> <!-- sixteen columns -->
+
+
     </div>
-    <div class="nine columns omega">
-      <ul>
-        <li>   About   </li>
-        <li>   Resume   </li>
-        <li>   Seedly   </li>
-        <li>   TweetSmithy   </li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+  </div> <!-- container -->
+
+ <script rel="text/javascript">
+        $("#about").hover(function() {
+            $("#content").append( $( "<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quibusdam, atque cum consequuntur suscipit ea facilis hic deserunt voluptatibus praesentium aperiam cupiditate tempora neque voluptatem perferendis iusto aliquam. Iste, magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, earum, facere expedita itaque eius commodi amet incidunt minima aliquid cupiditate quod reprehenderit voluptate iusto aut aliquam inventore sapiente voluptates quia. </span>" ) );
+          }, function() {
+            $( "#content" ).find( "span:last" ).remove();
+          }
+        );
+
+
+        // $( "#about.fade" ).hover(function() {
+        //   $( this ).fadeOut( 100 );
+        //   $( "#about" ).fadeIn( 1000 );
+        // });
+  </script>
+  <script rel="text/javascript">
+        $("#resume").hover(function() {
+            $("#content").append( $( "<span><imbed src='assets/images/web-resume.pdf' width = 800px height = 2100px </span>" ) );
+          }, function() {
+            $( "#content" ).find( "span:last" ).remove();
+          }
+        );
+
+          // $(<img id='resume-pdf' src='assets/images/profile-img.drw.jpg' alt='colins resume'>
+  </script>
+
   </body>
 </html>
 
