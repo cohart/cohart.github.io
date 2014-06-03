@@ -55,8 +55,8 @@
   <script rel="text/javascript">
         $("#resume").mouseenter(function() {
             $( "#content" ).empty();
-            $("#content").append( $( "<span><a href='assets/web/viewer.html?file=web-resume.pdf'>Open yourpdf.pdf with PDF.js</a> </span>" ).fadeIn("slow") );
-            $("#content").append($("<iframe width='100%' height='400px;' src='assets/web/viewer.html'></iframe>").fadeIn("slow") );
+            $("#content").append( $( "<a href='assets/web/viewer.html?file=web-resume.pdf'><img src='assets/images/resume-clip.png' id='resume-clip' alt=''></a>" ).fadeIn("slow") );
+            $("#content").append( $( "<div id='link-to-resume'> <a href='assets/web/viewer.html?file=web-resume.pdf'>click for full resume</a></div>" ).fadeIn("slow") );
           }
         );
 

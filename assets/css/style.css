@@ -7,6 +7,21 @@
    margin: 15px 40px 30px 45px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+#resume-clip {
+  /*margin-left: -34px;*/
+  width: 520px;
+  opacity: .80;
+  filter: alpha(opacity=20);
+}
+
+#link-to-resume {
+  color: red;
+  float: right;
+}
 
 #name {
   font-size: 30px;
