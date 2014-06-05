@@ -7,30 +7,23 @@
    margin: 15px 40px 30px 45px;
 }
 
-/* this is at the end of the nav */
-/*#contact {
-  padding-left: 8px;
-  display: inline-block;
 
-  float: right;
-  background-color: rgb(245, 240, 245);
-}*/
-
-/* this is setting it next to the name */
 #name, h1 {
+  padding-top: 4px;
   display: inline;
 }
 
 #contact {
   display: inline;
-  padding-left: 8px;
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+
 }
 
 /*end of next to name*/
 
 #resume-clip {
-  /*margin-left: -34px;*/
-  /*border:1px solid #7E7972;*/
   width: 520px;
   opacity: .80;
   filter: alpha(opacity=20);
@@ -53,7 +46,6 @@
 }
 
 h1 {
-  margin-top: 20px;
   margin-bottom: 2px;
 }
 
@@ -72,3 +64,4 @@ li {
 .container .nine.columns {
 margin: 45px 0px 0px 0px;
 }
+
