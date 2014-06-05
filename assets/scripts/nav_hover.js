@@ -11,4 +11,11 @@ $().ready(function() {
       $("#content").append( $( "<div id='link-to-resume'> <a href='assets/web/viewer.html?file=web-resume.pdf'>click for full resume</a></div>" ).fadeIn("slow") );
     }
   );
+
+  $("#smooth-streets").mouseenter(function() {
+    $( "#content" ).empty();
+    $(" #content ").append( $( "<a href='http://smoothstreets.herokuapp.com'><img src='assets/images/smooth-streets.png' id='smooth-streets-pic' alt='smooth streets'></a>" ).fadeIn("slow") );
+    $("#content").append( $( "<div id='link-to-challenge-post'> <a href='http://challengepost.com/software/smooth-streets'>Challenge Post</a></div>" ).fadeIn("slow") );
+  }
+  );
 });
