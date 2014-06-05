@@ -1,7 +1,7 @@
 $().ready(function() {
   $("#about").mouseenter(function() {
       $( "#content" ).empty();
-      $("#content").append( $( "<p>I'm a web developer with experience in numerous technologies and languages including Ruby on Rails, Javascript, Backbone.js, as well as testing suites like Rspec, Capybara, and Jasmine. I’m an Agile developer who always enjoys a good scrum and absolutely loves dealing with data and APIs.</p>" ).fadeIn("slow") );
+      $("#content").append( $( "<div>I'm a web developer with experience in numerous technologies and languages including Ruby on Rails, Javascript, Backbone.js, as well as testing suites like Rspec, Capybara, and Jasmine. I’m an Agile developer who always enjoys a good scrum and absolutely loves dealing with data and APIs.</div>" ).fadeIn("slow") );
     }
   );
 
@@ -14,13 +14,13 @@ $().ready(function() {
 
   $("#seedly").mouseenter(function() {
       $( "#content" ).empty();
-      $("#content").append( $( "<p>UNDER CONSTRUCTION</p>" ).fadeIn("slow") );
+      $("#content").append( $( "<div>UNDER CONSTRUCTION</div>" ).fadeIn("slow") );
     }
   );
 
   $("#tweet-smithy").mouseenter(function() {
       $( "#content" ).empty();
-      $("#content").append( $( "<p>UNDER CONSTRUCTION</p>" ).fadeIn("slow") );
+      $("#content").append( $( "<div>UNDER CONSTRUCTION</div>" ).fadeIn("slow") );
     }
   );
 
