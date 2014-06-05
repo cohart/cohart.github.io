@@ -68,3 +68,12 @@ margin: 45px 0px 0px 0px;
 #rewind {
   float: right;
 }
+
+#seedly-content {
+  display: inline;
+  padding-top: 65px;
+}
+
+#seedly-logo {
+  float: left;
+}

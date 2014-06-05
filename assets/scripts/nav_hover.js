@@ -14,7 +14,8 @@ $().ready(function() {
 
   $("#seedly").mouseenter(function() {
       $( "#content" ).empty();
-      $("#content").append( $( "<div>UNDER CONSTRUCTION</div>" ).fadeIn("slow") );
+      $("#content").append( $( "<div><a href=http://seed-ly.herokuapp.com/'><img src='assets/images/seedly-logo.png' id='seedly-logo' alt='seedly logo'></a></div>" ).fadeIn("slow") );
+      $("#content").append( $( "<div id='seedly-content'>Seedly is an app for gardeners that lets the user easily find their local frost date, calculate when individual seeds should be planted.</div>" ).fadeIn("slow") );
     }
   );
 
