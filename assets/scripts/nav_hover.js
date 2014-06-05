@@ -1,7 +1,7 @@
 $().ready(function() {
   $("#about").mouseenter(function() {
       $( "#content" ).empty();
-      $("#content").append( $( "<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quibusdam, atque cum consequuntur suscipit ea facilis hic deserunt voluptatibus praesentium aperiam cupiditate tempora neque voluptatem perferendis iusto aliquam. Iste, magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, earum, facere expedita itaque eius commodi amet incidunt minima aliquid cupiditate quod reprehenderit voluptate iusto aut aliquam inventore sapiente voluptates quia. </span>" ).fadeIn("slow") );
+      $("#content").append( $( "<span><p>I'm a web developer with experience in numerous technologies and languages including Ruby on Rails, Javascript, Backbone.js, as well as testing suites like Rspec, Capybara, and Jasmine. I’m an Agile developer who always enjoys a good scrum and absolutely loves dealing with data and APIs.</p></span>" ).fadeIn("slow") );
     }
   );
 
