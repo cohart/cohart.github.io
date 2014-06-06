@@ -35,8 +35,7 @@
   filter: alpha(opacity=20);
 }
 
-#link-to-resume, #link-to-challenge-post {
-  color: red;
+#link-to-resume, #smooth-streets-links, #seedly-links {
   float: right;
 }
 
