@@ -20,9 +20,11 @@ $().ready(function() {
     }
   );
 
-  $("#tweet-smithy").mouseenter(function() {
+  $("#farmsense-wrapper").mouseenter(function() {
       $( "#content" ).empty();
-      $("#content").append( $( "<div>UNDER CONSTRUCTION</div>" ).fadeIn("slow") );
+      $("#content").append( $( "<div><img src='assets/images/farmsense.png' id='farmsense-img' alt='farmsense download image'></div>" ).fadeIn("slow") );
+      $("#content").append( $( "<div id='farmsense-links'><i class='fa fa-github-alt'></i><a href='https://github.com/cohart/farmsense_wrapper'>Source</a> | <a href='https://rubygems.org/gems/farmsense_wrapper'>RubyGems/farmsense</a></div>" ).fadeIn("slow") );
+
     }
   );
 
