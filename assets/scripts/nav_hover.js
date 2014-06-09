@@ -23,6 +23,7 @@ $().ready(function() {
   $("#farmsense-wrapper").mouseenter(function() {
       $( "#content" ).empty();
       $("#content").append( $( "<div><img src='assets/images/farmsense.png' id='farmsense-img' alt='farmsense download image'></div>" ).fadeIn("slow") );
+      $("#content").append( $( "<div id='farmsense-content'>FarmsenseWrapper is a lightweight wrapper for the Farmsense API. This gem returns a list of nearby weather stations and probabilities of spring/fall frost dates for each station.</div>" ).fadeIn("slow") );
       $("#content").append( $( "<div id='farmsense-links'><i class='fa fa-github-alt'></i><a href='https://github.com/cohart/farmsense_wrapper'>Source</a> | <a href='https://rubygems.org/gems/farmsense_wrapper'>RubyGems/farmsense</a></div>" ).fadeIn("slow") );
 
     }
