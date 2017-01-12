@@ -25,14 +25,14 @@ const uiObject = {
   toggle() {
     $(event.target).parent().children('.active').removeClass('active');
 
-    $('section:visible').toggle();
+    $('section:visible').fadeToggle('fast');
   },
 
   loadAbout() {
     this.toggle()
 
     $(event.target).addClass('active');
-    $('.about-content').toggle();
+    $('.about-content').fadeToggle('fast');
   },
 
   loadPortfolio() {
