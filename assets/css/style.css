@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   max-width: 960px;
-  padding-top: 20px;
+  padding-top: 40px;
   font-family: "Raleway", "sans-serif";
   color: rgb(76, 71, 71);
 }
@@ -34,10 +34,10 @@ a {
 
 nav {
   margin: 0 10px 0 10px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
-ul {
+nav ul {
   list-style: none;
   font-size: 0;
   padding: 0;
@@ -45,7 +45,7 @@ ul {
   width: calc(100% - 55px);
 }
 
-li {
+nav ul li {
   box-sizing: border-box;
   display: inline-block;
   font-size: 1rem;
