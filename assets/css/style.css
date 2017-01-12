@@ -119,3 +119,21 @@ section {
   padding-left: 40px;
   border-left: 5px solid grey;
 }
+
+footer {
+  position:fixed;
+  /*left:0px;*/
+  bottom:40px;
+  height:30px;
+  width:960px;
+  margin: 0 auto;
+}
+
+footer ul li {
+  float: right;
+  padding: 5px;
+}
+
+footer ul li:after {
+  /*content: "&amp";*/
+}
