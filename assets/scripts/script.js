@@ -1,7 +1,7 @@
 $(function() {
   const $nav = $('nav');
 
-  $nav.click(function(event) {
+  $nav.click( function(event) {
     switch (event.target.className) {
       case "about":
         uiObject.loadAbout();
@@ -22,24 +22,66 @@ $(function() {
 
 
 const uiObject = {
-  toggle() {
+  toggle(fader, resolve) {
     $(event.target).parent().children('.active').removeClass('active');
-
-    $('section:visible').fadeToggle('fast');
+    // NEEDS A PROMISE
+    if ($('section:visible').length) {
+      $('section:visible').fadeToggle('fast', (resolve) => {
+        $(fader).fadeToggle('fast', (resolve) => {
+          resolve()
+        });
+      });
+    } else {
+      debugger
+      resolve()
+    }
   },
 
   loadAbout() {
-    this.toggle()
+    var faded = new Promise((resolve, reject) => {
+      this.toggle('.about-content', resolve)
+    })
 
-    $(event.target).addClass('active');
-    $('.about-content').fadeToggle('fast');
+    faded.then(() => {
+      $('.about-content').toggle();
+    })
+    .then(() => {
+      $(event.target).addClass('active');
+    })
+    .catch((err) => {
+      console.error(err)
+    })
   },
 
   loadPortfolio() {
-    this.toggle()
+    var faded = new Promise((resolve, reject) => {
+      this.toggle('.portfolio-content', resolve)
+    })
 
-    $(event.target).addClass('active');
-    // $('.about-content').toggle();
+    faded.then(() => {
+      $('.portfolio-content').toggle();
+    })
+    .then(() => {
+      $(event.target).addClass('active');
+    })
+    .then(() => {
+      var t = setInterval( function() {
+        $("#carousel ul").animate({marginLeft: -480}, 2000 , function() {
+          $(this).find("li:last").after($(this).find("li:first"));
+          $(this).css({marginLeft: 0});
+        })
+      }, 2500);
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+
+    // this.toggle('.portfolio-content')
+    //
+    // $(event.target).addClass('active');
+    // $('.portfolio-content').toggle();
+
+    // Set the interval to be 2.5 seconds
   },
 
   loadContact() {

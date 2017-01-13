@@ -11,6 +11,27 @@ h1  {
   font-weight: 400;
 }
 
+h2 {
+  font-family: "Lato";
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Lato";
+  display: block;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,6 +44,7 @@ a {
    clear: both;
 }
 
+/* NAV BAR */
 .logo {
   text-transform: uppercase;
   font-size: 3em;
@@ -98,6 +120,7 @@ section {
   margin: 0 auto;
 }
 
+/* ABOUT */
 .about-content {
   display: none;
 }
@@ -120,9 +143,34 @@ section {
   border-left: 5px solid grey;
 }
 
+/* PORTFOLIO */
+.portfolio-content {
+  display: none;
+}
+
+#carousel {
+  margin: 0 auto;
+  width: 480px;
+  overflow:hidden;
+}
+
+#carousel ul {
+  width: 1920px;
+  padding: 0;
+  margin: 0;
+}
+
+#carousel ul li {
+  width:480px;
+  text-align: center;
+  height: 280px;
+  list-style: none;
+  float:	left;
+}
+
+/* FOOTER */
 footer {
   position:fixed;
-  /*left:0px;*/
   bottom:40px;
   height:30px;
   width:960px;
@@ -135,5 +183,4 @@ footer ul li {
 }
 
 footer ul li:after {
-  /*content: "&amp";*/
 }
