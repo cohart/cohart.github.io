@@ -54,7 +54,7 @@ const uiObject = {
     var target = event.target;
 
     var faded = new Promise((resolve, reject) => {
-      this.toggle('.portfolio-content', target ,resolve)
+      this.toggle('.portfolio-content', target, resolve)
     })
 
     faded.then(() => {
