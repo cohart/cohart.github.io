@@ -81,7 +81,6 @@ nav ul li {
   font-size: 1rem;
   width: 33.3333333%; /* 291.6666667 / 875 */
   text-align: center;
-  /*padding: 1em;*/
   letter-spacing: 1px;
 
 }
@@ -103,14 +102,11 @@ nav ul li span {
 .active > span {
   background-color: #FFFF00;
   box-shadow: 5px 5px #6C0CE8;
-  /*text-transform: uppercase;*/
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s; /* Firefox < 16 */
   -ms-animation: fadein 1s; /* Internet Explorer */
   animation: fadein 1s;
 }
-
-
 
 @keyframes fadein {
   from { opacity: 0; }
@@ -185,7 +181,7 @@ section {
 }
 
 #carousel ul li {
-  width:480px;
+  width: 480px;
   text-align: center;
   height: 280px;
   list-style: none;
