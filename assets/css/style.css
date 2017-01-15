@@ -3,6 +3,11 @@
     -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/*body * {
+  border: 1px solid red;
+  box-sizing: border-box;
+}*/
+
 body {
   margin: 0 auto;
   max-width: 960px;
@@ -39,8 +44,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: rgb(13, 170, 255);
-
+  color: rgb(76, 71, 71);
 }
 
 .clearfix:after {
@@ -141,10 +145,61 @@ section {
 
 .sidebar {
   height: 350px;
-  border: 1px solid black;
   width: 25%;
   box-sizing: border-box;
   float: left;
+}
+
+.sidebar .container {
+  margin: 2em 1em;
+}
+
+.sidebar .container span {
+  float: left;
+  hyphens: auto;
+}
+
+.sidebar .container span:after {
+  content: '\a0'
+}
+
+.sidebar span:nth-child(6) {
+  display: inline;
+  color: #310569;
+  font-size: 1.5em
+}
+
+.sidebar span:nth-child(5) {
+  display: inline;
+  color: #5409B5;
+  font-size: 3em
+}
+
+.sidebar span:nth-child(4) {
+  display: inline;
+  color: #9553EC;
+  font-size: 2.5em;
+}
+
+.sidebar span:nth-child(3) {
+  display: inline;
+  color: #422569;
+  font-size: .5em;
+}
+
+.sidebar span:nth-child(2) {
+  display: inline;
+  color: #5409B5;
+  font-size: 2em;
+}
+
+.sidebar span:nth-child(1) {
+  display: inline;
+  color: #6C0CE8;
+}
+
+.sidebar span:nth-child(n+7) {
+  display: none;
 }
 
 .content {
@@ -152,9 +207,9 @@ section {
   height: 350px;
   width: 63%;
   box-sizing: border-box;
-  margin-left: 40px;
-  padding-left: 40px;
-  border-left: 5px solid grey;
+  margin-left: 30px;
+  padding-left: 30px;
+  background-color: rgba(255,255,255,0.5);
 }
 
 /* PORTFOLIO */
@@ -187,11 +242,14 @@ section {
   display: none;
 }
 
-.contact-content ul li {
-  display: inline-block;
-  margin: 9.1413333%
+.contact-content ul {
+  display: flex;
+  justify-content: space-around;
 }
 
+.contact-content ul li {
+  margin: 9.1413333%
+}
 
 /* FOOTER */
 footer {
@@ -242,7 +300,13 @@ footer ul li:after {
   .container {
     margin: 0 5%;
   }
+  .contact-content ul {
+    flex-direction:column;
+  }
   .contact-content ul li {
-    margin: 4.141333%
+   margin: 1em auto;
+  }
+  footer ul {
+    margin: 0 0;
   }
 }

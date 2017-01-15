@@ -43,6 +43,7 @@ const uiObject = {
       return false
     }
   },
+
   toggle(fader, target, resolve) {
     $(event.target).closest('ul').children('.active').removeClass('active');
 
@@ -70,13 +71,18 @@ const uiObject = {
   },
 
   loadAbout() {
-
     var target = event.target;
     var faded = new Promise((resolve, reject) => {
+      // $('.sidebar .container').children().each(function(i, el) {
+      //   $(el).parent().prepend($(this).eq(Math.random() * i |0));
+      // })
       this.toggle('.about-content', target, resolve)
     })
 
-    faded.catch((err) => {
+    faded.then(() => {
+
+    })
+    .catch((err) => {
       console.error(err)
     })
   },
