@@ -23,18 +23,27 @@ $(function() {
 
 const uiObject = {
   toggle(fader, target, resolve) {
-    $(event.target).parent().children('.active').removeClass('active');
-    // NEEDS A PROMISE
+    $(event.target).closest('ul').children('.active').removeClass('active');
+
     if ($('section:visible').length) {
       $('section:visible').fadeToggle('fast', () => {
-        $(target).addClass('active');
+        if ($(target).is('span')) {
+          $(target).parent().addClass('active');
+        } else {
+          $(target).addClass('active');
+        }
 
         $(fader).fadeToggle('fast', () => {
           resolve()
         });
       });
     } else {
-      $(target).addClass('active');
+      if ($(target).is('span')) {
+        $(target).parent().addClass('active');
+      } else {
+        $(target).addClass('active');
+      }
+
       resolve($(fader).fadeToggle('fast'))
     }
   },
