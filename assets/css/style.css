@@ -65,22 +65,37 @@ nav ul {
   list-style: none;
   font-size: 0;
   padding: 0;
+  text-align: center;
   float: left;
-  width: calc(100% - 55px);
+  width: calc(100% - 103px);
 }
 
 nav ul li {
   box-sizing: border-box;
   display: inline-block;
   font-size: 1rem;
-  width: 33.3333333%;
+  width: 33.3333333%; /* 291.6666667 / 875 */
   text-align: center;
-  padding: 1em;
-  cursor: pointer;
+  /*padding: 1em;*/
   letter-spacing: 1px;
+
+}
+/*
+remove width and add
+*/
+/*nav ul li:nth-child(n+2) {
+    margin-left: 11.111%;
+}*/
+
+nav ul li span {
+  vertical-align: middle;
+  line-height: 3em;
+  width: 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.active {
+.active > span {
   background-color: #FFFF00;
   box-shadow: 5px 5px #6C0CE8;
   /*text-transform: uppercase;*/
@@ -89,6 +104,8 @@ nav ul li {
   -ms-animation: fadein 1s; /* Internet Explorer */
   animation: fadein 1s;
 }
+
+
 
 @keyframes fadein {
   from { opacity: 0; }
@@ -138,7 +155,7 @@ section {
 .content {
   display: inline-block;
   height: 350px;
-  width: 64%;
+  width: 63%;
   box-sizing: border-box;
   margin-left: 40px;
   padding-left: 40px;
@@ -172,17 +189,47 @@ section {
 
 /* FOOTER */
 footer {
-  position:fixed;
-  bottom:40px;
-  height:30px;
-  width:960px;
+  position: fixed;
+  bottom: 10px;
+  height: 30px;
+  width: 100%;
   margin: 0 auto;
 }
 
+footer ul {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 10px;
+}
+
 footer ul li {
-  float: right;
   padding: 5px;
 }
 
 footer ul li:after {
+}
+
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin: 1px 3.06383%;
+  }
+  nav ul li span {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .logo {
+    width: 33.13px;;
+  }
+  nav {
+    margin: 0 5%;
+  }
+  nav ul li span {
+    width: 100%;
+  }
+  .container {
+    margin: 0 5%;
+  }
 }
