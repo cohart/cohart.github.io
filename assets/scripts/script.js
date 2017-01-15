@@ -102,9 +102,16 @@ const uiObject = {
   },
 
   loadContact() {
-    this.toggle()
+    var target = event.target;
+    var faded = new Promise((resolve, reject) => {
+      this.toggle('.contact-content', target, resolve)
+    })
 
-    $(event.target).addClass('active');
-    console.log("contact")
+    faded.catch((err) => {
+      console.error(err)
+    })
+
+    // $(event.target).addClass('active');
+    // console.log("contact")
   }
 }
