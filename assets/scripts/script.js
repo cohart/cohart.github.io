@@ -73,9 +73,6 @@ const uiObject = {
   loadAbout() {
     var target = event.target;
     var faded = new Promise((resolve, reject) => {
-      // $('.sidebar .container').children().each(function(i, el) {
-      //   $(el).parent().prepend($(this).eq(Math.random() * i |0));
-      // })
       this.toggle('.about-content', target, resolve)
     })
 
@@ -116,8 +113,5 @@ const uiObject = {
     faded.catch((err) => {
       console.error(err)
     })
-
-    // $(event.target).addClass('active');
-    // console.log("contact")
   }
 }

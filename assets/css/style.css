@@ -293,6 +293,7 @@ footer ul li:after {
   }
   nav {
     margin: 0 5%;
+    padding-bottom: 0px;
   }
   nav ul li span {
     width: 100%;
