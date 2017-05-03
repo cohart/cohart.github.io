@@ -1,17 +1,17 @@
 $(function() {
   const $nav = $('nav');
 
-  $nav.click( function(event) {
+  $nav.click( (event) => {
     switch (event.target.className) {
       case 'about':
         if (uiObject.preventReload('about')) break;
 
         uiObject.loadAbout();
         break;
-      case 'portfolio':
-        if (uiObject.preventReload('portfolio')) break;
+      case 'experience':
+        if (uiObject.preventReload('experience')) break;
 
-        uiObject.loadPortfolio();
+        uiObject.loadExperience();
         break;
       case 'contact':
         if (uiObject.preventReload('contact')) break;
@@ -24,7 +24,7 @@ $(function() {
         console.log('default')
     }
   });
-})
+});
 
 const stateObject = {
   currentState: '',
@@ -77,27 +77,19 @@ const uiObject = {
     })
 
     faded.then(() => {
-
     })
     .catch((err) => {
       console.error(err)
     })
   },
 
-  loadPortfolio() {
+  loadExperience() {
     var target = event.target;
-
     var faded = new Promise((resolve, reject) => {
-      this.toggle('.portfolio-content', target, resolve)
+      this.toggle('.exp-content', target, resolve)
     })
 
     faded.then(() => {
-      var t = setInterval( function() {
-        $("#carousel ul").animate({marginLeft: -480}, 2000 , function() {
-          $(this).find("li:last").after($(this).find("li:first"));
-          $(this).css({marginLeft: 0});
-        })
-      }, 2500);
     })
     .catch((err) => {
       console.error(err)
