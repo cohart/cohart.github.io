@@ -47,6 +47,10 @@ a {
   color: rgb(76, 71, 71);
 }
 
+p, li, h4 {
+  line-height: 1.5em;
+}
+
 .clearfix:after {
    content: ".";
    visibility: hidden;
@@ -167,14 +171,6 @@ section {
   display: none;
   margin: 0 auto;
   padding-left: 13%;
-}
-
-.exp-content p {
-  line-height: 1.5em;
-}
-
-.exp-content ul li {
-  line-height: 1.5em;
 }
 
 /* PORTFOLIO */
