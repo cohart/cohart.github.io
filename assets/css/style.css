@@ -13,7 +13,7 @@ body {
   max-width: 960px;
   padding-top: 40px;
   font-family: "Raleway", "sans-serif";
-  color: rgb(76, 71, 71);
+  color: rgb(38, 23, 38);
 }
 
 h1  {
@@ -137,6 +137,16 @@ section {
   max-width: 750px;
   margin: 0 auto;
 }
+/* PROFILE */
+.profile {
+  width: 65%;
+  height: 65%;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+}
 
 /* ABOUT */
 .about-content {
@@ -158,30 +168,38 @@ section {
   margin: 0 auto;
 }
 
+.exp-content p {
+  line-height: 1.5em;
+}
+
+.exp-content ul li {
+  line-height: 1.5em;
+}
+
 /* PORTFOLIO */
-.portfolio-content {
-  display: none;
-}
-
-#carousel {
-  margin: 0 auto;
-  width: 480px;
-  overflow:hidden;
-}
-
-#carousel ul {
-  width: 1920px;
-  padding: 0;
-  margin: 0;
-}
-
-#carousel ul li {
-  width: 480px;
-  text-align: center;
-  height: 280px;
-  list-style: none;
-  float:	left;
-}
+/* .portfolio-content { */
+/*   display: none; */
+/* } */
+/*  */
+/* #carousel { */
+/*   margin: 0 auto; */
+/*   width: 480px; */
+/*   overflow:hidden; */
+/* } */
+/*  */
+/* #carousel ul { */
+/*   width: 1920px; */
+/*   padding: 0; */
+/*   margin: 0; */
+/* } */
+/*  */
+/* #carousel ul li { */
+/*   width: 480px; */
+/*   text-align: center; */
+/*   height: 280px; */
+/*   list-style: none; */
+/*   float:	left; */
+/* } */
 
 /* CONTACT */
 .contact-content {
@@ -200,7 +218,7 @@ section {
 /* FOOTER */
 footer {
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   height: 30px;
   max-width: 100%;
   width: 960px;
